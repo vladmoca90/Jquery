@@ -1,14 +1,20 @@
-//you need to add the script in the head tag as well and other code that was in the example
 
-let popupCookie = Cookies.get('openedPopup');
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
 
-$('#popup').hide();
+ 
+<script>
+    var popupCookie = Cookies.get('openedPopup');
 
-if(!popupCookie) {
-    $('#popup').show();
-}
-
-$('.close-popup').on('click', function() {
-    Cookies.set('openedPopup', true);
     $('#popup').hide();
-});
+
+    if(!popupCookie) {
+        $('#popup').show();
+    }
+
+
+    $('.close-popup').on('click', function() {
+        Cookies.set('openedPopup', true);
+
+        $('#popup').hide();
+    });
+</script>
