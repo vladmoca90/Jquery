@@ -1,0 +1,14 @@
+//you need to add the script in the head tag as well and other code that was in the example
+
+let popupCookie = Cookies.get('openedPopup');
+
+$('#popup').hide();
+
+if(!popupCookie) {
+    $('#popup').show();
+}
+
+$('.close-popup').on('click', function() {
+    Cookies.set('openedPopup', true);
+    $('#popup').hide();
+});
