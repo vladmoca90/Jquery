@@ -10,6 +10,9 @@ body {
 #excluded {
   padding: 15px; }
 
+#showDay {
+  font-weight: bold; }
+
 #selectable {
   align-items: center;
   display: flex;
