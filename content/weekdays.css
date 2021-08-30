@@ -11,7 +11,8 @@ body {
   padding: 15px; }
 
 #showDay {
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 10px; }
 
 #selectable {
   align-items: center;
