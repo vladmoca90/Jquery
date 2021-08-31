@@ -69,7 +69,7 @@ $(function () {
             throw new Error('The line names and statuses must be given.');
         }
 
-        let body = $('.tube-body');
+        let tubeBody = $('.tube-body');
 
         for(let i = 0; i < tube.lines.length; i++) {
             let row = $('<tr></tr>');
@@ -79,7 +79,7 @@ $(function () {
             tubeLines.text(tube.lines[i].name);
             linesStatus.text(tube.lines[i].status);
 
-            body.append(row);
+            tubeBody.append(row);
             row.append(tubeLines);
             row.append(linesStatus);
         }
