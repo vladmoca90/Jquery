@@ -1,7 +1,7 @@
 $(function () {
     let day = $('#selectable').find('li');
     let showDay = $('#showDay');
-    let exclude = $('#exclude');
+    let excludeDay = $('#exclude');
 
     if(day.length == 0) {
         throw new Error('The list must be provided');
@@ -12,7 +12,7 @@ $(function () {
         showDay.text($(this).text());
     });
 
-    exclude.change(function() {
+    excludeDay.change(function() {
         if(this.checked) {
             for(let i = 0; i < day.length; i++) {
                 let weekend = day.eq(i);
