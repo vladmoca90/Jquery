@@ -5,15 +5,15 @@ $(function () {
         let text = $('#text').val();
 
         const countVowels = text => {
-            if(text.length == 0) {
+            if (text.length == 0) {
                 throw new Error('The text cannot be empty');
             }
 
             let count = 0;
 
-            for(let i = 0; i < text.length; i++) {
+            for (let i = 0; i < text.length; i++) {
                 let c = text.charAt(i);
-                if(isVowel(c)) {
+                if (isVowel(c)) {
                     count++;
                 }
             }
