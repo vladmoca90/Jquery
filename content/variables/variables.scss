@@ -6,24 +6,25 @@ $side-gray: 1px solid #ccc;
 
 $arial: Arial, Helvetica, sans-serif;
 $gill-sans: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$lucida: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 $times: 'Times New Roman', Times, serif;
 $verdana: Verdana, Geneva, Tahoma, sans-serif;
-$georgia: Georgia, 'Times New Roman', Times, serif;
-$montserrat:  'Montserrat', sans-serif;
 
 //variables for colors, including font color
 
-$font: #444;
-$black: #222;
+$font: #333;
+$black: #111;
 $red: #c0002b;
 $green-dark: #0a493e;
 $green-light: #317c2e;
 
 //device breakpoints
 
+
 $break-phone: 480px;
 $break-phone-landscape: 600px;
 $break-tablet: 768px;
 $break-small-desktop: 992px;
-$break-large-desktop: 1200px;
-$break-superwide: 1400px;
+$break-medium-desktop: 1280px;
+$break-large-desktop: 1400px;
+$break-superwide: 1800px;
