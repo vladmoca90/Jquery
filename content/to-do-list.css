@@ -32,6 +32,7 @@ body {
     text-transform: uppercase; }
   .main-container #field {
     border: 1px solid #a29e9e;
+    outline: 0;
     width: 100%;
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
