@@ -1,5 +1,5 @@
 body {
-  background-color: #00a8cc;
+  background-color: #0ac0e9;
   margin: 0;
   padding: 0; }
 
@@ -44,10 +44,10 @@ body {
   list-style-type: none;
   padding-left: 25px; }
   .list-container .list-main li {
-    background-color: #6AB7CA;
-    border: 1px solid #2a6173;
+    background-color: #8fbac5;
+    border: 1px solid #19576c;
     border-radius: 5px;
-    box-shadow: 1px -1px 24px #2a6173;
+    box-shadow: 1px -1px 24px #19576c;
     color: #fff;
     font-weight: 600;
     letter-spacing: 1px;
@@ -58,7 +58,7 @@ body {
     .list-container .list-main li:nth-of-type(1) {
       display: none; }
     .list-container .list-main li i {
-      color: #2a6173;
+      color: #19576c;
       cursor: pointer;
       font-size: 21px;
       font-weight: 100;
