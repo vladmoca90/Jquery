@@ -6,7 +6,7 @@ $(function() {
     let stationsUrl = 'http://trainticketmachine456.azurewebsites.net/api/stations/rdg';
 
     $.ajax(stationsUrl, {
-        methid:'GET',
+        method:'GET',
         success: function(response) {
 
         },
