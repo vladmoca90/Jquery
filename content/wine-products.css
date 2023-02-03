@@ -11,6 +11,8 @@
   margin: 25px auto;
   padding: 8px 0 8px 8px;
   width: 200px; }
+  #productsList option {
+    border-radius: 0; }
 
 .products-container {
   align-items: center;
