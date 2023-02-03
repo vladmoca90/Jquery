@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
 .box {
   background-color: #f9f8f5;
   margin: 0 auto;
@@ -36,7 +37,7 @@
   .product-description__left {
     text-align: center; }
   .product .product-title {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Comfortaa';
     font-size: 18px;
     text-transform: uppercase; }
   .product .product-img {

@@ -1,5 +1,6 @@
 @import 'variables/variables.scss';
 @import 'mixins/mixins.scss';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
 
 .box {
     background-color: #f9f8f5;
@@ -48,7 +49,7 @@
     }
 
     .product-title {
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Comfortaa';
         font-size: 18px;
         text-transform: uppercase;
     }
