@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&display=swap");
 body {
   background-color: #f9f8f5; }
 
@@ -40,7 +40,7 @@ body {
   .product-description__left {
     text-align: center; }
   .product .product-title {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Cantarell', sans-serif;
     font-size: 18px;
     text-transform: uppercase; }
   .product .product-img {
