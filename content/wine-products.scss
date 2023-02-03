@@ -2,8 +2,11 @@
 @import 'mixins/mixins.scss';
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
 
-.box {
+body {
     background-color: #f9f8f5;
+}
+
+.box {
     margin: 0 auto;
     max-width: $break-medium-desktop;
     padding: 20px 0;
