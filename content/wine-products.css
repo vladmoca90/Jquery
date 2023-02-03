@@ -40,6 +40,7 @@ body {
   .product-description__left {
     text-align: center; }
   .product .product-title {
+    color: #d38606;
     font-family: 'Cantarell', sans-serif;
     font-size: 18px;
     text-transform: uppercase; }
