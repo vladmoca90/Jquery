@@ -42,14 +42,14 @@
     font-weight: bold;
     letter-spacing: 0;
     margin: 0 15px 30px;
-    width: 320px;
+    padding: 15px 30px;
 
     &-description__left {
         text-align: center;
     }
 
     .product-title {
-        font-family: 'Comfortaa';
+        font-family: 'Comfortaa', cursive;
         font-size: 18px;
         text-transform: uppercase;
     }
