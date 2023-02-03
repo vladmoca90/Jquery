@@ -35,6 +35,7 @@
   .product-description__left {
     text-align: center; }
   .product .product-title {
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
     text-transform: uppercase; }
   .product .product-img {
