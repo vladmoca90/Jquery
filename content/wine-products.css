@@ -3,9 +3,11 @@
   max-width: 1080px; }
 
 #productsList {
+  border-radius: 6px;
+  display: block;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 14px;
-  margin: 25px 0;
+  margin: 25px auto;
   padding: 5px 0 5px 5px;
   width: 200px; }
 
