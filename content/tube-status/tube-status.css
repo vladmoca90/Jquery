@@ -16,6 +16,6 @@ body {
           text-align: left; }
         body #main .tube-container .tube-table th, body #main .tube-container .tube-table td {
           border: 1px solid #ccc;
-          padding: 10px 20px; }
+          padding: 15px; }
         body #main .tube-container .tube-table .tube-status {
           font-weight: bold; }
