@@ -4,7 +4,9 @@ body {
   position: relative; }
   body .pop-up {
     border: 1px solid #ccc;
-    max-width: 345px;
+    left: 0;
+    max-width: 350px;
+    margin: 0 auto;
     padding: 10px;
     position: absolute;
     right: 0;
