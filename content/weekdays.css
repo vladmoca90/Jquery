@@ -22,11 +22,11 @@ body {
   margin: 20px 0 0;
   padding-left: 0;
   max-width: 1200px; }
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: 1280px) {
     #selectable {
       justify-content: space-between; } }
   #selectable li {
-    background-color: #a31800;
+    background-color: #961802;
     border-radius: 4px;
     color: #fff;
     cursor: pointer;
@@ -39,7 +39,7 @@ body {
       #selectable li {
         margin: 0 15px 0 0; } }
     #selectable li.clicked {
-      background-color: #039403; }
+      background-color: #037c03; }
     #selectable li.disable-day {
       background-color: #ccc;
       color: #000; }

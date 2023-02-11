@@ -1,19 +1,26 @@
+@import 'variables/variables.scss';
+@import 'mixins/mixins.scss';
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     margin: 0;
     padding: 0;
 }
+
 .box-weekdays {
     margin: 30px;
 }
+
 #excluded {
     padding: 15px;
 }
+
 #showDay {
     font-weight: bold;
     margin-top: 30px;
 }
+
 #selectable {
     align-items: center;
     display: flex;
@@ -23,12 +30,12 @@ body {
     padding-left: 0;
     max-width: 1200px;
 
-    @media all and (min-width: 1200px) {
+    @media all and (min-width: $break-medium-desktop) {
         justify-content: space-between; 
     }
 
     li {
-        background-color: #a31800;
+        background-color: #961802;
         border-radius: 4px;
         color: #fff;
         cursor: pointer;
@@ -43,7 +50,7 @@ body {
         }
 
         &.clicked {
-            background-color: #039403;
+            background-color: #037c03;
         }
         &.disable-day {
             background-color: #ccc;
