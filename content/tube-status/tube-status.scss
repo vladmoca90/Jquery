@@ -1,3 +1,6 @@
+@import '../variables/variables.scss';
+@import '../mixins/mixins.scss';
+
 body {
     margin: 0;
     padding: 0;
@@ -12,14 +15,15 @@ body {
             max-width: 450px;
 
             .tube-table {
-                border: 1px solid #ccc;
+                border: $side-gray;
                 font-size: 14px;
                 width: 100%;
+
                 th {
                     text-align: left;
                 }
                 th, td {
-                    border: 1px solid #ccc;
+                    border: $side-gray;
                     padding: 10px 20px;
                 }
                 .tube-status {
