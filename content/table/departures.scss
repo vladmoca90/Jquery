@@ -2,7 +2,7 @@
 @import '../mixins/mixins.scss';
 
 .departures {
-    @include font(15px, $font, $verdana);
+    @include font(14px, $font, $verdana);
     margin: 40px auto;
     max-width: 850px;
     width: 100%;
