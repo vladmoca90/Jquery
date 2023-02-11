@@ -11,7 +11,7 @@ body {
       body #main .tube-container .tube-table {
         border: 1px solid #ccc;
         font-size: 14px;
-        width: 100%; }
+        width: 450px; }
         body #main .tube-container .tube-table th {
           text-align: left; }
         body #main .tube-container .tube-table th, body #main .tube-container .tube-table td {
