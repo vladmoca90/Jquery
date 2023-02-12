@@ -4,7 +4,7 @@ $(function () {
     textWarning.hide();
 
     check.on('click', function () {
-        let text =  $('#textField').val();
+        let text =  $('#textField').val().replace(/\d+/g,''); // Will exclude number characters. It will not count them in.
 
         const countEachLetter = text => {
             if(text.length == 0) {
