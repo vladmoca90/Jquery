@@ -18,6 +18,7 @@ $(function () {
 
             for(let i = 0; i < text.length; i++) {
                 let c = text.charAt(i);
+        
                 if(isVowel(c)) {
                     count++;
                 }

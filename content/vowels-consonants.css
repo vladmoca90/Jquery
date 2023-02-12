@@ -9,6 +9,7 @@
     width: 100%; }
   .main .check-btn {
     background-color: #045304;
+    border-radius: 6px;
     color: #fff;
     cursor: pointer;
     display: inline-block;
@@ -20,6 +21,7 @@
     text-transform: uppercase; }
   .main p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
     margin: 10px 0 0; }
     .main p span, .main p .alert-text {
       font-weight: bold; }
