@@ -1,5 +1,4 @@
 @import '../variables/variables.scss';
-
 @import '../mixins/mixins.scss';
 
 .teams {
@@ -9,12 +8,15 @@
     text-align: center;
     width: 100%;
 }
+
 .team-name {
     text-transform: uppercase;
 }
+
 .qualified-teams {
     background-color: #ccffcc;
 }
+
 .eliminated-teams {
     background-color: #ffcdd2;
 }
