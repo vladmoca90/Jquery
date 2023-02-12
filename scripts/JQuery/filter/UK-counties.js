@@ -1,5 +1,6 @@
 const data = {
-    counties: [{
+    counties: [
+        {
             title: 'Berkshire',
             content: 'Berkshire is a county in south east England, west of London and is one of the home counties. It was recognised by the Queen as the Royal County of Berkshire in 1957 because of the presence of Windsor Castle, and letters patent were issued in 1974. Berkshire is a county of historic origin and is a home county',
         },

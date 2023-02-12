@@ -6,11 +6,13 @@
     font-family: $gill-sans;
     margin: 0 auto;
     max-width: 550px;
+
     &__title {
         font-size: 30px;
         margin: 15px 0;
         text-align: center;
     }
+
     &__container {
         background-color: #eee;
         border-radius: 6px;
@@ -19,14 +21,17 @@
         margin-bottom: 25px;
         padding: 0 20px 20px;
     }
+
     &__heading {
         font-size: 20px;
         margin: 20px 0 15px;
         text-align: center;
     }
+
     &__text {
         margin: 0;
     }
+
     .search-bar {
         @include borders(1px, 0, 1px, 0, solid, #ccc);
         color: $font;
@@ -35,6 +40,7 @@
         margin: 20px auto 40px;
         padding: 5px;
         width: 100%;
+        
         &:focus {
             outline: 0;
         }
