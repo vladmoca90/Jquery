@@ -57,6 +57,9 @@ const data = {
 }
 
 $(function () {
+    let cities = $('#citiesDrop');
+    let countries = $('#countriesDrop');
+
     const populateCountriesDrop = data => {
         if(data.length == 0) {
             throw new Error('The list must be given');
@@ -67,13 +70,13 @@ $(function () {
 
             option.attr('value', data.countries[i].code);
             option.html(data.countries[i].name);
-            $('#countriesDrop').append(option);
+            countries.append(option);
         }
     }
 
     populateCountriesDrop(data, '#countriesDrop');
 
-    $('#countriesDrop').change(function () {
+    countries.change(function () {
         let selectedOption = $(this).find(':selected');
         let capital = selectedOption.val();
 
@@ -84,11 +87,11 @@ $(function () {
         }
     });
 
-    $('#countriesDrop').change(function () {
-        $('#citiesDrop').empty();
+    countries.change(function () {
+        cities.empty();
 
         let chooseCity = $('<option value="All other cities">Choose city:</option>');
-        $('#citiesDrop').append(chooseCity);
+        cities.append(chooseCity);
 
         let selectedOption = $(this).find(':selected');
         let country = selectedOption.val();
@@ -100,7 +103,7 @@ $(function () {
                     option.attr('value', data.countries[i].code);
                     option.html(data.countries[i].otherCities[j]);
 
-                    $('#citiesDrop').append(option);
+                    cities.append(option);
                 }
             }
         }
