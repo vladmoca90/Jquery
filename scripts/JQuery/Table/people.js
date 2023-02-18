@@ -25,14 +25,14 @@ const people = [
         nationality: 'Polish',
     },
 ];
-$(function () {
 
+$(function () {
     const addPeople = people => {
-        if(people.length == 0) {
+        if (people.length == 0) {
             throw new Error('The data must be given');
         }
 
-        for(let i = 0; i < people.length; i++) {
+        for (let i = 0; i < people.length; i++) {
             let row = $('<tr></tr>');
 
             let firstName = $('<td class="first-name"></td>');
