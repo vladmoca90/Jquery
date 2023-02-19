@@ -10,6 +10,7 @@ $(function () {
 
         for (let i = 0; i < 2; i++) {
             next = next.next();
+        
             if (!next.length) {
                 next = $(this).siblings(':first');
             }
