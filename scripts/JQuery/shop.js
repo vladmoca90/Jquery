@@ -22,7 +22,7 @@ let basket = [];
 let add= $('.product__btn--add');
 let remove = $('.product__btn--remove');
 
-const addToBaske = product => {
+const addToBasket = product => {
     // here you update the basket. you add one idem of the above product to the basket
     if(!product) {
         throw new Error('The product must be given');
