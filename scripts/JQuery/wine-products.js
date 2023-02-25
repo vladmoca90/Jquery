@@ -1,6 +1,7 @@
 $(function () {
     let products = [];
     let list = $('#productsList');
+    let product = $('.product');
 
     const createProductsList = products => {
         if(!products) {
@@ -12,8 +13,8 @@ $(function () {
         for(let i = 0; i < productsList.length; i++) {
             let productsObj = new Object();
 
-            productsObj.name = $('.product').eq(i).attr('data-product-name'),
-            productsObj.id = $('.product').eq(i).attr('data-product-id'),
+            productsObj.name = product.eq(i).attr('data-product-name'),
+            productsObj.id = product.eq(i).attr('data-product-id'),
             products.push(productsObj);
         }
     }
@@ -43,12 +44,12 @@ $(function () {
         let selected = $(this).find(':selected');
         let selectedOption = selected.val();
 
-        $('.product').hide();
+        product.hide();
 
         let matchedValue = '.product[data-product-id=' + selectedOption + ']';
 
         if(selectedOption == 0) {
-            $('.product').show();
+            product.show();
         }
         if(selectedOption !== 0) {
             $(matchedValue).show();
