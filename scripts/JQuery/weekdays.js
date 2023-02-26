@@ -18,14 +18,15 @@ $(function () {
                 let weekend = day.eq(i);
 
                 if (weekend.text() === 'Saturday' || weekend.text() === 'Sunday') {
-                    weekend.addClass('disable-day');
-                    weekend.removeClass('clicked');
-                    showDay.eq(i).text();
+                    //weekend.addClass('disable-day');
+                    //weekend.removeClass('clicked');
+                    //showDay.eq(i).text();
+                    weekend.hide();
                 }
             }
         } 
         else {
-            day.removeClass('disable-day');
+            weekend.show();
         }
     });
 });
