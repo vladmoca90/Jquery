@@ -51,7 +51,7 @@ $(function () {
         }
     }
 
-    student.on('change' ,function () {
+    student.change(function () {
         let selectedOption = $(this).find(':selected');
         let studentCode = selectedOption.val();
 
