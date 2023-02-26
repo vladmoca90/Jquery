@@ -38,6 +38,7 @@ $(function () {
     }
 
     addModels(cars, '#modelDrop');
+    
     models.change(function() {
         makes.empty();
 
