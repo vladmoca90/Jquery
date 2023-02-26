@@ -4,12 +4,13 @@
 .student-list {
     display: flex;
     font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: $lucida;
     justify-content: space-between;
     margin: 25px auto 0;
     max-width: 265px;
 
     select, option {
+        font-family: $lucida;
         padding: 5px 3px;
     }
 }
