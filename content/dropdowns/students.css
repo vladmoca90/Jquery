@@ -1,6 +1,7 @@
 .student-list {
   display: flex;
   font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   justify-content: space-between;
   margin: 25px auto 0;
   max-width: 265px; }
@@ -9,5 +10,4 @@
 
 #mark {
   border: 1px solid #ccc;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding: 5px; }
