@@ -3,7 +3,7 @@ const data = {
             name: 'India',
             code: 'IND',
             capital: 'Delhi',
-            otherCities: ['Madras', 'Mumbai', 'Calcutta', 'letanasi', 'Hyderabad'],
+            otherCities: ['Madras', 'Mumbai', 'Calcutta', 'Varanasi', 'Hyderabad'],
         },
         {
             name: 'Romania',
@@ -15,7 +15,7 @@ const data = {
             name: 'Israel',
             code: 'ISR',
             capital: 'Jerusalem',
-            otherCities: ['Tel Aviv', 'Haifa', 'Eilat', 'Netanya'],
+            otherCities: ['Tel-Aviv', 'Haifa', 'Eilat', 'Netanya'],
         },
         {
             name: 'France',
