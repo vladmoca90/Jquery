@@ -97,6 +97,7 @@ $(function () {
         let country = selectedOption.val();
 
         for(let i = 0; i < data.countries.length; i++) {
+            
             if(data.countries[i].code == country) {
                 for(let j = 0; j < data.countries[i].otherCities.length; j++) {
                     let option = $('<option></option>');
