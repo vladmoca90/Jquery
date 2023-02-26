@@ -60,7 +60,7 @@ $(function () {
     });
 
     const includeStocksInCars = stocks => {
-        if(stocks.lenght == 0) {
+        if(stocks.length == 0) {
             throw new Error('Stocks list must be given');
         }
 
