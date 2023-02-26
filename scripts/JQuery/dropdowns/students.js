@@ -18,7 +18,7 @@ const data = {
         {
             code: 'IAR',
             name: 'Ilinca-Alexandra Rolea',
-            mark: 9.90,
+            mark: 9.91,
         },
         {
             code: 'AD',
