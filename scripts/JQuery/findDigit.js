@@ -13,7 +13,7 @@ $(function () {
                 throw new Error('The number must be given');
             }
             if (n.toString().length == 1) {
-                throw new Error('The number must have at leat two digits');
+                throw new Error('The number must have at least two digits');
             }
             if (m < 0) {
                 throw new Error('The digit must be greater than 0');
