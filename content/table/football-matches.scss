@@ -2,7 +2,7 @@
 @import '../mixins/mixins.scss';
 
 .teams {
-    @include font(15px, $font, $gill);
+    @include font(16px, $font, $gill);
     margin: 25px auto;
     max-width: 550px;
     text-align: center;
