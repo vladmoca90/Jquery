@@ -44,11 +44,9 @@ body {
             &__logo {
                 filter: brightness(100);
             }
-
             div {
                 flex-direction: column;
             }
-
             &-text {
                 color: #fff;
                 font-size: 18px;
@@ -76,8 +74,5 @@ body {
                 text-align: center;
             }
         }
-    }
-    .footer {
-
     }
 }
