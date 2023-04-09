@@ -2,6 +2,6 @@
 @import '../mixins/mixins.scss';
 
 .square {
-    max-height: 450px;
-    max-width: 450px;
+    max-height: $break-phone;
+    max-width: $break-phone;
 }
