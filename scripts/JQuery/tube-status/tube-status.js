@@ -87,7 +87,7 @@ $(function () {
 
     getTubeLines(tube);
 
-    const addColors = () => {
+    const addColorsToLines = () => {
         let status = $('.tube-status');
 
         for(let i = 0; i < status.length; i++) {
@@ -105,5 +105,5 @@ $(function () {
         }
     }
 
-    addColors();
+    addColorsToLines();
 });
