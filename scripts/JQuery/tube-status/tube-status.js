@@ -58,7 +58,7 @@ const tube = {
         },
         {
             name: 'Croydon Tram',
-            status: 'Good service',
+            status: 'Closed',
         },
     ]
 }
