@@ -45,7 +45,7 @@ $(function () {
 
   const changeTab = () => {
     $('.form-tabs input').change(function () {
-        console.log('CHANGED');
+       // console.log('CHANGED');
         let tabId = $(this).attr('id');
         $('.tab').hide();
 
