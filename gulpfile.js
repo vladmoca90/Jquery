@@ -1,5 +1,5 @@
 let gulp = require('gulp');
-let sass = require('gulp-sass')(require('sass'));
+let sass = require('gulp-sass');
 
 gulp.task('sass', function () {
   return gulp.src('content/**/*.scss')
