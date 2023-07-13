@@ -1,11 +1,11 @@
 //variables for borders
 
-$side-gray: 1px solid #ccc;
+$border-gray: 1px solid #ccc;
 
 //variables for font families
 
 $arial: Arial, Helvetica, sans-serif;
-$gill: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$gill-sans: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 $lucida: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 $times: 'Times New Roman', Times, serif;
 $verdana: Verdana, Geneva, Tahoma, sans-serif;
@@ -24,6 +24,6 @@ $break-phone: 480px;
 $break-phone-landscape: 600px;
 $break-tablet: 768px;
 $break-small-desktop: 992px;
-$break-medium-desktop: 1280px;
+$break-medium-desktop: 1200px;
 $break-large-desktop: 1400px;
 $break-superwide: 1800px;
