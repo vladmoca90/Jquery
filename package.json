@@ -1,24 +1,29 @@
 {
-  "name": "jquery-sources",
+  "name": "html-css",
   "version": "1.0.0",
-  "description": "Jquery",
+  "description": "CSS-Practice",
   "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0",
+    "scss": "^0.2.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch content -o content"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vladmoca90/Jquery.git"
+    "url": "git+https://github.com/vladmoca90/HTML-CSS.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "ag_dubs <vladmoca90@gmail.com>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vladmoca90/Jquery/issues"
+    "url": "https://github.com/vladmoca90/HTML-CSS/issues"
   },
-  "homepage": "https://github.com/vladmoca90/Jquery#readme",
-  "dependencies": {
-    "gulp-sass": "^5.1.0",
-    "jquery": "^3.7.0",
-    "scss": "^0.2.4"
-  }
+  "homepage": "https://github.com/vladmoca90/HTML-CSS#readme"
 }
