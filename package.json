@@ -4,6 +4,7 @@
   "description": "CSS-Practice",
   "main": "gulpfile.js",
   "dependencies": {
+    "bootstrap": "^5.3.0",
     "gulp": "^4.0.2"
   },
   "devDependencies": {
