@@ -1,3 +1,5 @@
+//A function that counts the vowels and consonants in a text
+
 $(function () {
     let check = $('.check-btn');
     let textWarning = $('.alert-text');
