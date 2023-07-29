@@ -1,5 +1,6 @@
 const data = {
-    teams: [{
+    teams: [
+        {
             name: 'Brazil',
             played: 3,
             won: 2,
@@ -47,7 +48,6 @@ const data = {
 }
 
 $(function () {
-
     const getTeams = data => {
         if(data.teams.length == 0) {
             throw new Error('The teams must be given');

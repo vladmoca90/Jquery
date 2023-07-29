@@ -1,5 +1,4 @@
-﻿
-const people = [
+﻿const people = [
     {
         firstName: 'Vlad',
         lastName: 'Mocanu',
