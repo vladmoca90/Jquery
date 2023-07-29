@@ -43,7 +43,7 @@ const removeFromBasket = product => {
     }
 
     for(let i = 0; i < basket.length; i++) {
-        if(basket[i].id == product.id) { // nu exista productId
+        if(basket[i].id == product.id) {
             basket.splice(i, 1);
         }
     }
