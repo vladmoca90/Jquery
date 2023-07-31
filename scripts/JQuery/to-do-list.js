@@ -3,7 +3,7 @@ $(function () {
     let list = $('.list-main');
     let listItem = $('.list-item');
     let text = $('#field');
-    let close = $('<button class="close-btn">X</button>');
+    let close = $('<span class="close-btn">X</span>');
 
     addBtn.on('click', function() {
         let clone = listItem.clone();
