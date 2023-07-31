@@ -5,7 +5,7 @@ $blue: #a7e3f2;
 $dark-blue: #19576c;
 $gray: #a29e9e;
 $green: #28a745;
- 
+
 @mixin listBorder {
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
@@ -37,7 +37,7 @@ body {
     .type-field {
         display: flex;
     }
-    
+
     .add-button {
         background-color: $green;
         border-color: transparent;
@@ -82,15 +82,17 @@ body {
         &:nth-of-type(1) {
             display: none;
         }
+    }
 
-        i {
-            color: $dark-blue;
-            cursor: pointer;
-            font-size: 21px;
-            font-weight: 100;
-            position: relative;
-            float: right;
-            top: -5px;
-        }
+    .close-btn {
+        background-color: transparent;
+        border: 0;
+        float: right;
+        font-size: 21px;
+        font-weight: 700;
+        padding: 0 6px;
+        position: relative;
+        right: -8px;
+        top: -5px;
     }
 }
