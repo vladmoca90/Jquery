@@ -1,12 +1,11 @@
 $(function () {
     let addBtn = $('.add-button');
     let list = $('.list-main');
+    let listItem = $('.list-item');
     let text = $('#field');
     let close = $('<i class="fa fa-close"></i>');
 
     addBtn.on('click', function() {
-        let clone = list.find('li.list-item:first').clone();
-
         let listContent = text.val();
         let listText = clone.text(listContent);
 
@@ -21,7 +20,7 @@ $(function () {
         }   
 
         close.on('click', function() {
-            $(this).parent('.list-item').remove();
+            $(this).closest('.list-item').remove();
         });
     });
 });
