@@ -5,13 +5,13 @@ $(function () {
     let close = $('<i class="fa fa-close"></i>');
 
     addBtn.on('click', function() {
-        let clone = list.html().trim();
+        let clone = list.find('li.list-item:first').clone();
 
         let listContent = text.val();
         let listText = clone.text(listContent);
 
         list.append(listText);
-        //listText.append(close);
+        listText.append(close);
 
         if(listContent.trim().length == 0) {
             clone.remove();
