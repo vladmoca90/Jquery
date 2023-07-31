@@ -20,10 +20,9 @@ $(function () {
         if(listContent.length > 0) {
             return text.val(null);
         }   
-
-        close.on('click', function() {
-            event.preventDefault();
-            $(this).parents('.list-item').remove();
-        });
+    });
+    
+    $('.fa.fa-close').on('click', function() {
+        $(this).parent('.list-item').remove();
     });
 });
