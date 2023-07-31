@@ -3,7 +3,7 @@ $(function () {
     let list = $('.list-main');
     let listItem = $('.list-item');
     let text = $('#field');
-    let close = $('<i class="fa fa-close"></i>');
+    let close = $('<button class="close-btn">X</button>');
 
     addBtn.on('click', function() {
         let clone = listItem.clone();
@@ -22,7 +22,7 @@ $(function () {
         }   
     });
     
-    $('.fa.fa-close').on('click', function() {
-        $(this).parent('.list-item').remove();
+    $('.close-btn').on('click', function() {
+        $(this).parent().remove();
     });
 });
