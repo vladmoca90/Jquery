@@ -6,6 +6,8 @@ $(function () {
     let close = $('<i class="fa fa-close"></i>');
 
     addBtn.on('click', function() {
+        let clone = listItem.clone();
+        
         let listContent = text.val();
         let listText = clone.text(listContent);
 
@@ -20,7 +22,8 @@ $(function () {
         }   
 
         close.on('click', function() {
-            $(this).closest('.list-item').remove();
+            event.preventDefault();
+            $(this).parents('.list-item').remove();
         });
     });
 });
