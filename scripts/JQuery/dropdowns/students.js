@@ -38,11 +38,11 @@ $(function () {
     let mark = $('#mark');
 
     const getStudents = data => {
-        if(data.students.length == 0) {
+        if (data.students.length == 0) {
             throw new Error('The students list must be given');
         }
 
-        for(let i = 0; i < data.students.length; i++) {
+        for (let i = 0; i < data.students.length; i++) {
             let option = $('<option></option>');
 
             option.attr('val', data.students[i].code);
@@ -55,8 +55,8 @@ $(function () {
         let selectedOption = $(this).find(':selected');
         let studentCode = selectedOption.val();
 
-        for(let i = 0; i < data.students.length; i++) {
-            if(data.students[i].name == studentCode) {
+        for (let i = 0; i < data.students.length; i++) {
+            if (data.students[i].name == studentCode) {
                 mark.text(data.students[i].mark);
             }
         }
