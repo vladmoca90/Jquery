@@ -21,8 +21,4 @@ $(function () {
             return text.val(null);
         }   
     });
-    
-    $('.close-btn').on('click', function() {
-        $(this).parent().remove();
-    });
 });
