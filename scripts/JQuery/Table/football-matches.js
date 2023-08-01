@@ -49,11 +49,11 @@ const data = {
 
 $(function () {
     const getTeams = data => {
-        if(data.teams.length == 0) {
+        if (data.teams.length == 0) {
             throw new Error('The teams must be given');
         }
 
-        for(let i = 0; i < data.teams.length; i++) {
+        for (let i = 0; i < data.teams.length; i++) {
             let row = $('<tr></tr>');
 
             let teamName = $('<td></td>');
