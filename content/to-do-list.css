@@ -69,10 +69,6 @@ body {
   width: 100%;
 }
 
-.list-container .list-main li:nth-of-type(1) {
-  display: none;
-}
-
 .list-container .list-main li .close-btn {
   background-color: transparent;
   border: 0;
