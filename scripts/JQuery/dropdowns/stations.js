@@ -118,7 +118,7 @@ const destinations = [
 
 $(function () {
     const getTrainStations = (destinations, dropdownId) => {
-        if(destinations.length == 0) {
+        if (destinations.length == 0) {
             throw new Error('Destinations must be provided');
         }
 
@@ -131,7 +131,7 @@ $(function () {
         let destination = $('<option value="Choose destination">Choose destination:</option>');
         $('#toStation').append(destination);
 
-        for(let i = 0; i < destinations.length; i++) {
+        for (let i = 0; i < destinations.length; i++) {
             let stationOption = $('<option></option>');
 
             stationOption.attr('value', destinations[i].code);
@@ -142,15 +142,15 @@ $(function () {
 
     getTrainStations(destinations, '#fromStation');
 
-    $('#fromStation').change(function() {
+    $('#fromStation').change(function () {
         let selectedOption = $(this).find(':selected');
         let removeSelected = selectedOption.val();
         let destinations2 = [];
 
-        for(let i = 0; i < destinations.length; i++) {
-           if(removeSelected != destinations[i].code) {
-               destinations2.push(destinations[i]);
-           }
+        for (let i = 0; i < destinations.length; i++) {
+            if (removeSelected != destinations[i].code) {
+                destinations2.push(destinations[i]);
+            }
         }
 
         getTrainStations(destinations2, '#toStation');
