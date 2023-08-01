@@ -78,6 +78,10 @@ body {
         padding: 14px;
         position: relative;
         width: 100%;
+
+        &:first-of-type {
+            display: none;
+        }
     }
 
     .close-btn {

@@ -1,21 +1,23 @@
 $(function () {
     let addBtn = $('.add-button');
     let list = $('.list-main');
-    let listItem = $('<li class="list-item"><span class="close-btn">X</span></li>');
     let text = $('#field');
+    let close = $('<span class="close-btn">X</span>');
 
     addBtn.on('click', function() {
-        list.append(listItem);
-        let clone = listItem.clone();
+        let clone = list.find('li:first-of-type').clone();
         
         let listContent = text.val();
-        let listText = listItem.text(listContent);
+        let listText = clone.text(listContent);
 
-        /* if(listContent.trim().length == 0) {
+        list.append(listText);
+        listText.append(close);
+
+        if(listContent.trim().length == 0) {
             clone.remove();
         }
         if(listContent.length > 0) {
             return text.val(null);
-        } */
+        }   
     });
 });
