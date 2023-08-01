@@ -30,11 +30,11 @@ $(function () {
     });
 
     const addNames = people => {
-        if(people.length == 0) {
+        if (people.length == 0) {
             throw new Error('The persons list must be given');
         }
 
-        for(let i = 0; i < people.length; i++) {
+        for (let i = 0; i < people.length; i++) {
             let name = $('<li class="dropdown__list-item"></li>');
 
             name.val(people[i].name);
