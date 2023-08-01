@@ -71,7 +71,7 @@ $(function () {
 
         let tubeBody = $('.tube-body');
 
-        for(let i = 0; i < tube.lines.length; i++) {
+        for (let i = 0; i < tube.lines.length; i++) {
             let row = $('<tr></tr>');
             let tubeLines = $('<td class="tube-lines"></td>');
             let linesStatus = $('<td class="tube-status"></td>');
@@ -90,16 +90,16 @@ $(function () {
     const addColorsToLines = () => {
         let status = $('.tube-status');
 
-        for(let i = 0; i < status.length; i++) {
+        for (let i = 0; i < status.length; i++) {
             let tubeStatus = status.eq(i).text();
 
-            if(tubeStatus === 'Closed') {
+            if (tubeStatus === 'Closed') {
                 status.eq(i).css('color', 'red');
             }
-            if(tubeStatus === 'Partially closed') {
+            if (tubeStatus === 'Partially closed') {
                 status.eq(i).css('color', 'orange');
             }
-            if(tubeStatus === 'Good service') {
+            if (tubeStatus === 'Good service') {
                 status.eq(i).css('color', 'green');
             }
         }
