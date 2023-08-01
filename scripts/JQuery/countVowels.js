@@ -1,5 +1,4 @@
 //A function that counts the vowels in a text
-
 $(function () {
     let countBtn = $('.countBtn');
 
