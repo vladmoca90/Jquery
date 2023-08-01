@@ -45,11 +45,11 @@ $(function () {
 
   const changeTab = () => {
     $('.form-tabs input').change(function () {
-       // console.log('CHANGED');
-        let tabId = $(this).attr('id');
-        $('.tab').hide();
+      // console.log('CHANGED');
+      let tabId = $(this).attr('id');
+      $('.tab').hide();
 
-        $('#' + tabId + 'Tab').show();
+      $('#' + tabId + 'Tab').show();
     });
   }
 
