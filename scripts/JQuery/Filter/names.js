@@ -55,11 +55,11 @@ const names = [
 
 $(function () {
     const addNamesToDropdown = names => {
-        if(names.length == 0) {
+        if (names.length == 0) {
             throw new Error('The list with names must be provided');
         }
 
-        for(let i = 0; i < names.length; i++) {
+        for (let i = 0; i < names.length; i++) {
             let option = $('<option></option>');
 
             $('#names').append(option);
@@ -71,11 +71,11 @@ $(function () {
     addNamesToDropdown(names);
 
     const addNamesToList = names => {
-        if(names.length == 0) {
+        if (names.length == 0) {
             throw new Error('The list with names must be provided');
         }
 
-        for(let i = 0; i < names.length; i++) {
+        for (let i = 0; i < names.length; i++) {
             let nameItem = $('<li></li>');
 
             $('#namesList').append(nameItem);
@@ -85,7 +85,7 @@ $(function () {
 
     addNamesToList(names);
 
-    $('#names').change(function() {
+    $('#names').change(function () {
         let selected = $(this).find(':selected');
         let selectedOption = selected.val();
 
