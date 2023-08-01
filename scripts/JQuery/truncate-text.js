@@ -1,5 +1,4 @@
 //A function that truncates a piece of text
-
 $(function () {
     $('.truncate-btn').on('click', function () {
         let text = $('#textContent').val();
