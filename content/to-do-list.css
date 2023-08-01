@@ -76,6 +76,7 @@ body {
 .list-container .list-main li .close-btn {
   background-color: transparent;
   border: 0;
+  display: block;
   float: right;
   font-size: 21px;
   font-weight: 700;
