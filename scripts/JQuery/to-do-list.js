@@ -1,9 +1,8 @@
 $(function () {
     let addBtn = $('.add-button');
     let list = $('.list-main');
-    let listItem = $('.list-item');
+    let listItem = $('<li class="list-item"><span class="close-btn">X</span></li>');
     let text = $('#field');
-    let close = $('<span class="close-btn">X</span>');
 
     addBtn.on('click', function() {
         let clone = listItem.clone();
@@ -12,7 +11,6 @@ $(function () {
         let listText = clone.text(listContent);
 
         list.append(listText);
-        listText.append(close);
 
         if(listContent.trim().length == 0) {
             clone.remove();
