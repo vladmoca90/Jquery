@@ -4,7 +4,7 @@ $(function () {
         let countriesDropdown = $('#makeDropdown');
         let countries = xml.find('country');
 
-        for(let i = 0; i < countries.length; i++) {
+        for (let i = 0; i < countries.length; i++) {
             let country = $(countries[i]);
             let countryOption = $('<option></option>');
 
