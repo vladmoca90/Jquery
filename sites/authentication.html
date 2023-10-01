@@ -1,68 +1,83 @@
 <!DOCTYPE html>
 <html lang="en-gb">
 
-<head>
+    <head>
 
-    <title>Authentication</title>
+        <title>Authentication</title>
 
-    <meta charset="utf-8" />
+        <meta charset="utf-8" />
 
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous">
     </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous">
     </script>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous">
     </script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../content/authentication.css" />
+        <link rel="stylesheet" href="../content/authentication.css" />
 
-</head>
-<body>
-    <div class="content">
-        <form method="post" target="_self">
-            <div class="form-group">
-                <label for="Name">Name</label>
-                <input aria-label="text"  type="text" class="form-control" id="name" placeholder="name">
+    </head>
+    <body>
+        <div class="content">
+            <form method="post" target="_self">
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input aria-label="text" type="text" class="form-control"
+                        id="name" placeholder="name">
+                </div>
+                <div class="form-check">
+                    <input aria-label="text" type="checkbox"
+                        class="form-check-input" id="gender">
+                    <label class="form-check-label" for="male">Male</label>
+                    <input aria-label="text" type="checkbox"
+                        class="form-check-input" id="gender">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email address</label>
+                    <input aria-label="text" type="email" class="form-control"
+                        id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input aria-label="text" type="password"
+                        class="form-control" id="password"
+                        placeholder="password">
+                </div>
+                <div class="form-check">
+                    <input aria-label="text" type="checkbox"
+                        class="form-check-input" id="check">
+                    <label class="form-check-label" for="check">Check me out</label>
+                </div>
+                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div class="validation-alerts">
+                <p class="name-alert">The name is too short.</p>
+                <p class="email-alert">The email is missing the @ symbol.</p>
+                <p class="password-alert">The password does not have the valid
+                    format.</p>
+                <p class="gender-alert">You must choose your gender.</p>
+                <p class="checkOut-alert">You must check the form.</p>
             </div>
-             <div class="form-check">
-                <input aria-label="text"  type="checkbox" class="form-check-input" id="gender">
-                <label class="form-check-label" for="male">Male</label>
-                 <input aria-label="text"  type="checkbox" class="form-check-input" id="gender">
-                <label class="form-check-label" for="female">Female</label>
-            </div>
-            <div class="form-group">
-                <label for="Email">Email address</label>
-                <input aria-label="text"  type="email" class="form-control" id="email" placeholder="Enter email">
-            </div>
-            <div class="form-group">
-                <label for="Password">Password</label>
-                <input aria-label="text"  type="password" class="form-control" id="password" placeholder="password">
-            </div>
-            <div class="form-check">
-                <input aria-label="text"  type="checkbox" class="form-check-input" id="check">
-                <label class="form-check-label" for="check">Check me out</label>
-            </div>
-            <button id="submit" type="submit" class="btn btn-primary">Submit</button>
-        </form>
-        <div class="validation-alerts">
-            <p class="name-alert">The name is too short.</p>
-            <p class="email-alert">The email is missing the @ symbol.</p>
-            <p class="password-alert">The password does not have the valid format.</p>
-            <p class="gender-alert">You must choose your gender.</p>
-             <p class="checkOut-alert">You must check the form.</p>
         </div>
-    </div>
-</body>
-<script src="../scripts/JQuery/authentication.js"></script>
-<script src="../scripts/jquery.min.js"></script>
+    </body>
+    <script src="../scripts/JQuery/authentication.js"></script>
+    <script src="../scripts/jquery.min.js"></script>
 </html>

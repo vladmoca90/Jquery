@@ -1,77 +1,93 @@
 <html lang="en-gb">
 
-<head>
+    <head>
 
-    <title>Account</title>
+        <title>Account</title>
 
-    <meta charset="utf-8" />
+        <meta charset="utf-8" />
 
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../content/utilities/utilities.css" />
+        <link rel="stylesheet" href="../content/utilities/utilities.css" />
 
-    <link rel="stylesheet" href="../content/AJAX/account.css" />
+        <link rel="stylesheet" href="../content/AJAX/account.css" />
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <div class="account">
-        <div class="d-flex">
-            <div class="account__input">
-                <input aria-label="text"  type="text" placeholder="First name" id="firstName" />
-            </div>
-            <div class="account__input">
-                <input aria-label="text"  type="text" placeholder="Last name" id="lastName" />
-            </div>
-            <div class="account__dropdown">
-                <label>Title:</label>
-                <select aria-label="dropdown" id="title">
-                    <option></option>
-                    <option value="100">Mr</option>
-                    <option value="200">Miss</option>
-                    <option value="300">Mrs</option>
-                    <option value="400">Ms</option>
-                    <option value="500">Dr</option>
-                </select>
-            </div>
-            <div class="account__dropdown">
-                <label>Title</label>
-                <select aria-label="dropdown" aria-label="dropdown" id="accountType">
-                    <option></option>
-                    <option value="1000">Personal</option>
-                    <option value="1100">Savings</option>
-                    <option value="2000">Business</option>
-                </select>
-            </div>
-            <div class="account__check">
-                <div>
-                    Add overdraft:&nbsp;<input aria-label="text"  type="checkbox" id="checkOverdraft" />
-                    <label class="add-overdraft__value">Overdraft:<input aria-label="text"  type="text" name="accountCheck" id="addOverdraft" /></label>
+        <div class="account">
+            <div class="d-flex">
+                <div class="account__input">
+                    <input aria-label="text" type="text"
+                        placeholder="First name" id="firstName" />
                 </div>
-                <div>
-                    Receive offers:&nbsp;<input aria-label="text"  type="checkbox" name="accountCheck" id="receiveOffers" />
+                <div class="account__input">
+                    <input aria-label="text" type="text" placeholder="Last name"
+                        id="lastName" />
                 </div>
-                <div>
-                    Agree to terms:&nbsp;<input aria-label="text"  type="checkbox" name="accountCheck" id="agreeTerms" />
+                <div class="account__dropdown">
+                    <label>Title:</label>
+                    <select aria-label="dropdown" id="title">
+                        <option></option>
+                        <option value="100">Mr</option>
+                        <option value="200">Miss</option>
+                        <option value="300">Mrs</option>
+                        <option value="400">Ms</option>
+                        <option value="500">Dr</option>
+                    </select>
+                </div>
+                <div class="account__dropdown">
+                    <label>Title</label>
+                    <select aria-label="dropdown" aria-label="dropdown"
+                        id="accountType">
+                        <option></option>
+                        <option value="1000">Personal</option>
+                        <option value="1100">Savings</option>
+                        <option value="2000">Business</option>
+                    </select>
+                </div>
+                <div class="account__check">
+                    <div>
+                        Add overdraft:&nbsp;<input aria-label="text"
+                            type="checkbox" id="checkOverdraft" />
+                        <label class="add-overdraft__value">Overdraft:<input
+                                aria-label="text" type="text"
+                                name="accountCheck" id="addOverdraft" /></label>
+                    </div>
+                    <div>
+                        Receive offers:&nbsp;<input aria-label="text"
+                            type="checkbox" name="accountCheck"
+                            id="receiveOffers" />
+                    </div>
+                    <div>
+                        Agree to terms:&nbsp;<input aria-label="text"
+                            type="checkbox" name="accountCheck" id="agreeTerms" />
+                    </div>
                 </div>
             </div>
+            <button type="submit" id="accountSubmit">Submit</button>
         </div>
-        <button type="submit" id="accountSubmit">Submit</button>
-    </div>
-    <script src="../scripts/jquery.min.js"></script>
-    <script src="../scripts/JQuery/AJAX/account.js"></script>
-</body>
+        <script src="../scripts/jquery.min.js"></script>
+        <script src="../scripts/JQuery/AJAX/account.js"></script>
+    </body>
 </html>
