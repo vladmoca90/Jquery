@@ -24,14 +24,14 @@ body {
 #selectable {
     align-items: center;
     display: flex;
-    justify-content: start; 
+    justify-content: start;
     flex-wrap: wrap;
     margin: 20px 0 0;
     padding-left: 0;
     max-width: 1200px;
 
     @media all and (min-width: $break-medium-desktop) {
-        justify-content: space-between; 
+        justify-content: space-between;
     }
 
     li {
@@ -52,6 +52,7 @@ body {
         &.clicked {
             background-color: #037c03;
         }
+
         &.disable-day {
             background-color: #ccc;
             color: #000;

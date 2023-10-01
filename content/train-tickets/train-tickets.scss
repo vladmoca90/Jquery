@@ -35,7 +35,6 @@ body {
     }
 
     .content {
-    
         &__panel {
             background-color: $green-dark;
             margin: 40px auto;
@@ -44,13 +43,16 @@ body {
             &__logo {
                 filter: brightness(100);
             }
+
             div {
                 flex-direction: column;
             }
+
             &-text {
                 color: #fff;
                 font-size: 18px;
                 margin-bottom: 4px;
+
                 &:last-of-type {
                     margin-bottom: 0;
                 }

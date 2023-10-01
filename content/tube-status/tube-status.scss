@@ -22,10 +22,13 @@ body {
                 th {
                     text-align: left;
                 }
-                th, td {
+
+                th,
+                td {
                     border: $side-gray;
                     padding: 15px;
                 }
+
                 .tube-status {
                     font-weight: bold;
                 }

@@ -1,5 +1,4 @@
 @import '../variables/variables.scss';
-
 @import '../mixins/mixins.scss';
 
 .echo {
@@ -7,9 +6,11 @@
     font-size: 15px;
     margin: 20px auto;
     max-width: 825px;
+
     &-text {
         height: 400px;
         width: 400px;
+
         &:nth-of-type(2) {
             margin-left: auto;
         }

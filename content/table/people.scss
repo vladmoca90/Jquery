@@ -2,10 +2,12 @@ table {
     border: 1px solid #ccc;
     margin: 35px auto 0;
     max-width: 600px;
+
     tr>td {
         border-right: 1px solid #ddd;
         cursor: pointer;
     }
+
     th, td {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 16px;

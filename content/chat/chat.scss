@@ -20,13 +20,16 @@ h1 {
         float: left;
         clear: both;
 
-        .alex>.picture, .alexText,
-        .alexTime, .vlad>.picture,
-        .vladText, .vladTime {
+        .alex>.picture,
+        .alexText,
+        .alexTime,
+        .vlad>.picture,
+        .vladText,
+        .vladTime {
             float: left;
         }
 
-        .alexTime, 
+        .alexTime,
         .vladTime {
             margin: 4% 0% 0% 2.5%;
             font-weight: bold;

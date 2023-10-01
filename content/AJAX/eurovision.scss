@@ -1,5 +1,4 @@
 @import '../variables/variables.scss';
-
 @import '../mixins/mixins.scss';
 
 .dropdown-container {
@@ -8,21 +7,25 @@
     max-width: 400px;
     width: 100%;
 }
+
 .dropdown-button {
     display: block;
 }
+
 #countryVoteTemplate {
     display: none;
 }
+
 .template {
     margin: 0 auto;
     max-width: 200px;
     width: 100%;
 
     span {
-       font-size: 15px;
+        font-size: 15px;
     }
 }
+
 .delete-row {
     cursor: pointer;
     display: inline-block;

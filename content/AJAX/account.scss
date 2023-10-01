@@ -1,5 +1,4 @@
 @import '../variables/variables.scss';
-
 @import '../mixins/mixins.scss';
 
 .account {
@@ -7,23 +6,28 @@
     margin: 20px auto;
     max-width: 215px;
     padding: 15px;
+
     div.d-flex {
         flex-flow: column nowrap;
     }
+
     &__input,
     &__dropdown,
     &__check {
         margin-bottom: 15px;
     }
+
     #firstName,
     #lastName {
         padding-left: 4px;
     }
+
     &__check {
         .add-overdraft__value {
             display: none;
         }
-        #checkOverdraft:checked + .add-overdraft__value {
+
+        #checkOverdraft:checked+.add-overdraft__value {
             display: block;
         }
     }
