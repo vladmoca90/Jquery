@@ -1,4 +1,4 @@
-var data = {
+let data = {
     makes: [{
             name: 'Alfa Romeo',
             models: [{
@@ -119,7 +119,7 @@ function getModelsForMake(make) {
         throw new Error("Make parameter must be populated.");
     }
 
-    for (var i = 0; i < data.makes.length; i++) {
+    for (let i = 0; i < data.makes.length; i++) {
         if (data.makes[i].name == make) {
             return data.makes[i].models;
         }
@@ -133,11 +133,11 @@ function populateModelsDropdown(make) {
         throw new Error("make must be provided.");
     }
 
-    var models = getModelsForMake(make);
-    var modelDropdown = $('#modelDropdown');
+    let models = getModelsForMake(make);
+    let modelDropdown = $('#modelDropdown');
 
-    for (var i = 0; i < models.length; i++) {
-        var modelOption = $('<option />');
+    for (let i = 0; i < models.length; i++) {
+        let modelOption = $('<option />');
         modelOption.val(models[i].name);
         modelOption.html(models[i].name);
 
@@ -150,10 +150,10 @@ function populateUi(makes) {
         throw new Error("Makes array cannot be null or empty.");
     }
 
-    var makeDropdown = $('#makeDropdown');
+    let makeDropdown = $('#makeDropdown');
 
-    for (var i = 0; i < makes.length; i++) {
-        var option = $('<option />');
+    for (let i = 0; i < makes.length; i++) {
+        let option = $('<option />');
         option.val(makes[i].name);
         option.html(makes[i].name);
 
@@ -166,11 +166,11 @@ function updateStocksForMake(make) {
         throw new Error("make must be provided.");
     }
 
-    var models = getModelsForMake(make);
-    var stockTotal = $('.stock-value');
-    var totalStock = 0;
+    let models = getModelsForMake(make);
+    let stockTotal = $('.stock-value');
+    let totalStock = 0;
 
-    for (var i = 0; i < models.length; i++) {
+    for (let i = 0; i < models.length; i++) {
         totalStock += models[i].stock;
     }
 
@@ -182,10 +182,10 @@ function updateStocksForModel(make, model) {
         throw new Error("Both make and model must be provided.");
     }
 
-    var models = getModelsForMake(make);
-    var totalStock = 0;
+    let models = getModelsForMake(make);
+    let totalStock = 0;
 
-    for(var i = 0; i < models.length; i++) {
+    for(let i = 0; i < models.length; i++) {
         if(models[i].name == model) {
             totalStock = models[i].stock;
             break;
@@ -194,7 +194,7 @@ function updateStocksForModel(make, model) {
         }
     }
 
-    var stockTotal = $('.stock-value');
+    let stockTotal = $('.stock-value');
     stockTotal.html(totalStock);
 }
 
@@ -213,7 +213,7 @@ function updateStocks(make, model) {
 function resetModelsDropdown() {
     $('#modelDropdown').empty();
 
-    var anyOption = $('<option />');
+    let anyOption = $('<option />');
     anyOption.html('Model (any)');
     anyOption.val('any');
     $('#modelDropdown').append(anyOption);
@@ -221,13 +221,13 @@ function resetModelsDropdown() {
 }
 
 function resetStocks() {
-    var totalStocks = 0;
+    let totalStocks = 0;
 
-    for(var i = 0; i < data.makes.length; i++) {
-        var make = data.makes[i];
+    for(let i = 0; i < data.makes.length; i++) {
+        let make = data.makes[i];
 
-        for(var j = 0; j < make.models.length; j++) {
-            var model = make.models[j];
+        for(let j = 0; j < make.models.length; j++) {
+            let model = make.models[j];
             totalStocks += model.stock;
         }
     }
@@ -271,8 +271,8 @@ function setUpEvents() {
     });
 
     $('#modelDropdown').change(function () {
-        var make = $('#makeDropdown').val();
-        var model = this.value;
+        let make = $('#makeDropdown').val();
+        let model = this.value;
 
         selectModel(make, model);
     });
