@@ -1,0 +1,54 @@
+.u-relative {
+  position: relative; }
+
+.u--absolute {
+  position: absolute; }
+
+.u-fixed {
+  position: fixed; }
+
+.u-text--bold {
+  font-weight: bold; }
+
+.u-text--white {
+  color: #fff; }
+
+.u-bg--white {
+  background-color: #fff; }
+
+.u-full-width {
+  width: 100%; }
+
+.u-full-height {
+  height: 100%; }
+
+.u-border {
+  border: 1px solid #ccc; }
+
+.u-inline {
+  display: inline; }
+
+.u-block {
+  display: block; }
+
+.u-table {
+  display: table; }
+
+.u-flex {
+  display: flex; }
+
+.u-flex--column {
+  flex-direction: column; }
+
+.u-center {
+  align-items: center;
+  justify-content: center; }
+
+.u-space-around {
+  justify-content: space-around; }
+
+.u-space-between {
+  justify-content: space-between; }
+
+.u-space-evenly {
+  justify-content: space-evenly; }

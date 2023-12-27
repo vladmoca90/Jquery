@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0; }
+  body .content {
+    background-color: rgba(115, 206, 234, 0.25);
+    border: 1px solid #ccc;
+    margin: 25px auto 0;
+    max-width: 400px;
+    padding: 12px;
+    width: 100%; }
+    body .content form label,
+    body .content form input {
+      font-size: 14px; }
+    body .content form label[for="male"] {
+      margin-right: 18px; }
+    body .content form label[for="male"],
+    body .content form label[for="female"],
+    body .content form label[for="check"] {
+      text-indent: 3px; }
+    body .content form label {
+      color: #5d5b5b; }
+    body .content form input {
+      height: 30px;
+      padding: 0.1rem .35rem .2rem !important; }
+    body .content form .form-check {
+      margin: 10px 0; }
+      body .content form .form-check .form-check-input {
+        height: auto;
+        margin: 6px 0 0 -15px; }
+    body .content form button {
+      font-size: 14px;
+      margin-top: 5px;
+      width: 90px; }
+    body .content .validation-alerts {
+      margin-top: 5px; }
+      body .content .validation-alerts p {
+        color: #cb2000;
+        font-size: 14px;
+        margin-bottom: 5px; }
